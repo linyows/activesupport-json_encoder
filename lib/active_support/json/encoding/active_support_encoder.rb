@@ -92,8 +92,6 @@ module ActiveSupport
       end
 
       class << self
-        remove_method :encode_big_decimal_as_string, :encode_big_decimal_as_string=
-
         # If false, serializes BigDecimal objects as numeric instead of wrapping
         # them in a string.
         attr_accessor :encode_big_decimal_as_string
